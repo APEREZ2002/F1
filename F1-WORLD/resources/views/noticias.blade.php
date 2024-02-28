@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Noticias de Fórmula 1</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/noticias/noticias.css">
 
 
 
@@ -17,7 +17,7 @@
     </div>
     <nav class="navbar">
         <ul>
-            <li><a href="/">HOME</a></li>
+        <li><a href="/noticias">HOME</a></li>
             <li><a href="/social">SOCIAL</a></li>
             <li><a href="/store">STORE</a></li>
             <li><a href="/experiencias">EXPERIENCIAS</a></li>
@@ -34,21 +34,21 @@
         <img src="../images/2.jpeg" alt="Noticia Principal">
 
             <div class="news-content">
-                <h2>Título de la Noticia Principal</h2>
+                <h2>Hamilton se va a Ferrari</h2>
                 <p>Descripción breve de la noticia principal...</p>
             </div>
         </div>
         <div class="secondary-news">
-            <a href="/news/1">
+            <a href="/noticias/1">
                 <img src="../images/3.jpeg" alt="Noticia 1">
             </a>
-            <a href="/news/2">
+            <a href="/noticias/2">
                 <img src="../images/4.jpeg" alt="Noticia 2">
             </a>
-            <a href="/news/3">
+            <a href="/noticias/3">
                 <img src="../images/3.jpeg" alt="Noticia 3">
             </a>
-            <a href="/news/4">
+            <a href="/noticias/4">
                 <img src="../images/4.jpeg" alt="Noticia 4">
             </a>
         </div>

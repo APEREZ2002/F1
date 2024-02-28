@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e10600; /* Fondo rojo de la temática Fórmula 1 */
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header .logo img {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+nav.navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav.navbar ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.news h1 {
+  background-color: #d52b1e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.main-news {
+  display: flex; /* Habilita Flexbox */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Añade espacio entre la imagen y el texto */
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.main-news img {
+  width: 45%; /* Ajusta este valor según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-right: 20px; /* Añade un margen derecho para separar del texto */
+}
+
+
+
+.main-news, .secondary-news {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.main-news img, .secondary-news img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-content h2 {
+  margin-top: 0;
+}
+
+.news-content {
+  width: 50%; /* Ajusta este valor según necesites */
+  text-align: left;
+}
+
+.secondary-news {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio suficiente */
+  background-color: white;
+  color: black;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.secondary-news a {
+  flex: 1; /* Hace que los enlaces (y por lo tanto las imágenes dentro) se expandan para llenar el espacio */
+  margin: 5px; /* Añade una separación entre las imágenes */
+  box-sizing: border-box; /* Asegura que el padding y border sean incluidos en el ancho total del elemento */
+}
+
+.secondary-news img {
+  width: 100%; /* Hace que las imágenes se expandan para llenar el enlace contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  display: block; /* Elimina el espacio extra debajo de las imágenes */
+}
+
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* Media queries para ajustes responsivos */
+@media (max-width: 768px) {
+  .secondary-news img {
+    width: 150px; /* Ajuste para tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .secondary-news img {
+    width: 100px; /* Ajuste para teléfonos móviles */
+  }
+
+  nav.navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
