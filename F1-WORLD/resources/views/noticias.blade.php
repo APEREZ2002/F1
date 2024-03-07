@@ -46,7 +46,9 @@
     <section class="news">
         <h1>Last News:</h1>
         <div class="main-news">
+
             <img src="../images/descarga-_1_.png" alt="Noticia Principal">
+
             <div class="news-content">
                 <h2>Hamilton se va a Ferrari</h2>
                 <p>Ferrari ha anunciado a las 20.12 de la tarde el fichaje más sensacional de los últimos años en el deporte y desde luego uno de los más importantes 
