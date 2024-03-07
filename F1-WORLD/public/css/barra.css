@@ -1,0 +1,67 @@
+.linea-titulo {
+  background: rgb(228, 14, 14);
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 25px;
+  left: 120px;
+  top: 25%;
+
+}
+  
+.logo-banner {
+  position: absolute;
+  width: 100px;
+  height: 110px;
+  left: 20px;
+ 
+}
+
+.boton-banner {
+  float: right  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  padding-right: 10px;
+  font-size: 15px;
+  color: rgb(254, 254, 254);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0s;
+  text-decoration: none;
+
+}
+
+button:hover {
+  color: rgb(0, 0, 0);
+}
+
+footer {
+
+  background: rgb(235, 56, 56);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px;
+  
+  
+}
