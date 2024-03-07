@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e10600; /* Fondo rojo */
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .logo img {
+  display: block;
+  margin: auto;
+  width: 200px; /* Tamaño específico para el logo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+header nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Fondo rojo */
+  color: black;
+  line-height: 1.6;
+}
+
+.banner {
+  width: 800px; /* Ancho de las imágenes del carrusel */
+  height: 500px; /* Altura de las imágenes del carrusel */
+  margin: 0 auto; /* Centra el banner horizontalmente */
+  margin-top: 60px;
+  margin-bottom: 50px;
+  overflow: hidden; /* Evita que el contenido sobresalga del banner */
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción y cubriendo el contenedor */
+}
+
+.contenido {
+  text-align: center;
+}
+.experiencia{
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.experiencias-list {
+
+  padding:30px;
+  max-width: auto; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenido */
+}
+
+.experiencias-list .experiencia img {
+  width: 300px; /* La imagen ocupará el 100% del ancho del contenedor */
+  max-width:1000px; /* Ajusta el ancho máximo de las imágenes según sea necesario */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  margin-right: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.experiencia p {
+  flex: 1; /* Para que el texto ocupe el espacio restante */
+}
+
+
+.carousel-caption {
+  background-color: rgba(10, 10, 10, 0.7); /* Ajusta el valor alpha para cambiar la opacidad */
+  padding: 10px; /* Ajusta el espacio interno según tus preferencias */
+  border-radius: 5px; /* Ajusta el radio de la esquina para darle un aspecto más redondeado */
+}
+
+/* Ajusta el color del texto según tus necesidades */
+.carousel-caption h5, .carousel-caption p {
+  color: #fff; /* Color blanco para el texto */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red; /* Cambia este valor al color deseado */
+    border-radius: 50%; /* Ajusta el radio para hacer la flecha más redondeada si es necesario */
+    color: #000; /* Ajusta el color del ícono de flecha (flecha amarilla sobre fondo oscuro en este caso) */
+}
+
+        /* Agrega estilos específicos para la Experiencia VIP */
+        .experiencia-vip {
+          text-align: center;
+          padding: 30px;
+          margin-top: 50px; /* Agrega un margen superior según tus necesidades */
+      }
+
+      .experiencia-vip img {
+          width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+          max-width: 600px; /* Establece el ancho máximo de la imagen según sea necesario */
+          height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+          margin-bottom: 20px;
+      }
+
+      .experiencia-vip p {
+          font-size: 18px;
+          line-height: 1.5;
+      }
+
+        /* Agrega estilos específicos para la Experiencia 2 - Pruebas de Conducción */
+        .experiencia-pruebas {
+          text-align: center;
+          padding: 30px;
+          margin-top: 50px; /* Espacio entre el header y el inicio del contenido */
+      }
+
+      .experiencia-pruebas img {
+          width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+          max-width: 600px; /* Establece el ancho máximo de la imagen según sea necesario */
+          height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+          margin-bottom: 20px;
+      }
+
+      .experiencia-pruebas p {
+          font-size: 18px;
+          line-height: 1.5;
+      }
+
+              /* Agrega estilos específicos para la Experiencia 3 - Simulador Virtual */
+              .experiencia-simulador {
+                text-align: center;
+                padding: 30px;
+                margin-top: 50px; /* Espacio entre el header y el inicio del contenido */
+            }
+    
+            .experiencia-simulador img {
+                width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+                max-width: 600px; /* Establece el ancho máximo de la imagen según sea necesario */
+                height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+                margin-bottom: 20px;
+            }
+    
+            .experiencia-simulador p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  main .news .secondary-news a img {
+    width: 150px; /* Tamaño reducido para pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  main .news .secondary-news a img {
+    width: 100px; /* Tamaño más pequeño para dispositivos móviles */
+  }
+}
+
+.experiencia-buttons {
+  margin-top: 20px;
+  padding-left: 20px; /* Agrega el padding a la izquierda aquí */
+  margin-bottom: 20px;
+}
+.experiencia-buttons a {
+  margin: 0 10px;
+}

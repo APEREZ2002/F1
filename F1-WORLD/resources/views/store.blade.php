@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de la Noticia</title>
+    <title>Experiencias Fórmula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/barra.css">
 
+
 </head>
 <body>
+
 <header>
     <div class="linea-titulo">
         <div class="titulo">OS CARRINHOS</div>
@@ -27,8 +29,8 @@
                 <a href="/experiencias">EXPERIENCIAS</a>&nbsp
             </button>
             @auth
-                <button>
-                    Bienvenido, {{ Auth::user()->name }}!
+                <button> 
+                    <a href="/perfil">Bienvenido, {{ Auth::user()->name }}!</a>
                 </button>
                 <form action="/logout" method="post" style="display: inline-block;">
                     @csrf
@@ -42,31 +44,23 @@
         </div>
     </div>
 </header>
-    <main>
 
-<section class="news">
-        <div class="main-news">
-        <img src="../images/f3.jpg" alt="Noticia 1">
-            <div class="news-content">
-                <h2>F3</h2>
-                <p>It was PREMA Racing and Dino Beganovic that won the first pole position of the year, sealing P1 with a 1:46.431 for the top spot in the final moments of the session.
+<main style="text-align: center;">
+    <br><br><br>
+<h1>TIENDA</h1>
+</main>
 
-The Ferrari Academy Driver was over a tenth quicker than Hitech Pulse-Eight’s Luke Browning who ended up second, just 0.003s clear of Gabriele Minì in third.
-The session was led early on by Trident’s Leonardo Fornaroli, who looked to be the driver to beat following the initial runs.</p>
-<a class= "hola" href="/">Volver a las noticias</a>
-        </section>
-
-
-    </main>
-
-    <footer class="footer">
-    <center>
-        <p>Tlf: 696 69 69 69 // Mail: f69@f69.com  // Horario de atención al cliente: 09h-14h / 15h-18h </p>
-        <p>&copy; OS CARRINHOS</p>
-    </center>
+<footer class="footer">
+    <p>Tlf: 696 69 69 69</p>
+    <p>Mail: f69@f69.com</p>
+    <div class="footer-hours">
+        <p>Horario de atención al cliente:</p>
+        <p>09h-14h / 15h-18h</p>
+    </div>
 </footer>
-    
 
-
+<!-- Agrega aquí cualquier script adicional que necesites -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

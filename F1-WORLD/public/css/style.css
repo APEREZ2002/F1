@@ -62,6 +62,7 @@ main .news .secondary-news {
 
 
 main .news .main-news img {
+  padding-top: 50px;
   width:50%; /* Restablece el ancho a auto para permitir un tamaño específico */
   max-width:100%; /* Máximo 50% del ancho del contenedor */
   height: auto; /* La altura es automática para mantener la proporción */
@@ -104,10 +105,20 @@ footer {
   padding: 20px 0;
 }
 
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
 footer p {
   margin-bottom: 10px;
 }
 
+.footer p {
+  margin-bottom: 10px;
+}
 /* Media queries para responsividad */
 @media (max-width: 768px) {
   main .news .secondary-news a img {
@@ -119,4 +130,53 @@ footer p {
   main .news .secondary-news a img {
     width: 100px; /* Tamaño más pequeño para dispositivos móviles */
   }
+}
+
+.hola{
+  font-size: 20px;
+  color: red;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid #fff;
+  max-height: 600px;
+  overflow-y: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #f8f9fa73;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px; /* Ajusta el ancho deseado */
+
+}
+
+.mensaje {
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.formulario-mensaje {
+  margin-top: 10px;
+}
+
+.chatyboton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  width: 300px; /* Ajusta el ancho deseado */
+}
+
+.formulario-mensaje input,
+.formulario-mensaje button {
+  flex: 1; /* Hace que ocupen todo el espacio disponible en el contenedor */
+  margin-right: 5px; /* Añade un pequeño espacio entre el input y el botón */
+}
+
+/* Agregado para espacio entre mensajes y formulario */
+.espacio-mensajes {
+  margin-bottom: 10px;
 }
