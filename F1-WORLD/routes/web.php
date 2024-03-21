@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\TiendaC;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -43,10 +45,10 @@ Route::post('/enviar-mensaje', [ChatController::class, 'enviarMensaje'])->name('
 
 //store
 
-Route::get('/store', function () {
-    return view('store');
-});
+Route::get('/store', [TiendaC::class, 'index']);
+
 //perfil
+Route::post('/update-profile', [AuthController::class, 'updateProfile'])->name('update-profile');
 
 Route::get('/perfil', function () {
     return view('perfil');
@@ -58,3 +60,11 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+use App\Http\Controllers\carritoCont;
+
+
+Route::get('/carrito', [carritoCont::class, 'index'])->name('carrito');
+Route::post('/agregar-carrito/{id}', [TiendaC::class, 'agregarAlCarrito'])->name('agregar.carrito');
+Route::get('/comprar', [carritoCont::class, 'comprar'])->name('comprar');

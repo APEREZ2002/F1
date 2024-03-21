@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -137,25 +138,152 @@ footer p {
   color: red;
 }
 
-.chat-container {
+
+
+
+.contenedor-principal {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 20px;
+  padding: 20px;
+  height: calc(812px); /* Ajustar según la altura de tu header y footer */
+  box-sizing: border-box;
+  
+}
+
+.lado-izquierdo {
   display: flex;
-  flex-direction: column-reverse;
-  border: 1px solid #fff;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 5px;
+}
 
-  max-height: 600px;
-
- 
-
-  overflow-y: auto;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: #f8f9fa73;
-  padding: 10px;
+.seccion1, .seccion3 {
+  background: #eee;
+  padding: 20px;
   border-radius: 10px;
-  width: 300px; /* Ajusta el ancho deseado */
+}
+
+.seccion1 {
+  display: flex; /* Establece un contenedor Flex */
+  flex-direction: column; /* Orienta los elementos en columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+  height: 200px; /* Altura automática para ajustarse al contenido */
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logos-arriba {
+  display: flex; /* Establece un contenedor Flex para los logos superiores */
+  justify-content: center; /* Centra los logos horizontalmente */
+  align-items: center; /* Centra los logos verticalmente */
+  gap: 20px; /* Espacio entre los logos */
+  width: 100%; /* Ocupa todo el ancho disponible del contenedor padre */
+  margin-bottom: -15px;
+}
+
+.social-logo {
+  max-width: 100%; /* Asegura que la imagen no sea más grande que el contenedor */
+  height: 80px; /* Mantiene la proporción de las imágenes */
+  margin: 1px;
+}
+
+.seccion1 h2{
+margin-top: 5px;
+  font-size: 20px;
+color: #000;
+margin-bottom: -10px;
+}
+
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+}
+
+
+.foro {
+  flex: 1;
+  height: 550px;
+}
+
+.boton{
+  font-size: 15px;
+  color: black;
 
 }
+
+.chatyboton {
+  position: relative;
+  bottom: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Estilos específicos para la sección 2 con ajustes responsivos */
+.seccion2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  background: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.video-item {
+  flex: 1; /* Hace que los elementos sean flexibles en su tamaño */
+  max-width: calc(50% - 20px); /* Máximo dos elementos por fila */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.video-info h3, .video-info p {
+  margin: 10px 0;
+  color: #000;
+}
+
+/* Media queries para adaptabilidad */
+@media (max-width: 1024px) {
+  .video-item {
+    max-width: calc(50% - 20px); /* Ajuste para tablets y dispositivos de tamaño mediano */
+  }
+}
+
+@media (max-width: 768px) {
+  .seccion2 {
+    justify-content: center; /* Centra los elementos en dispositivos más pequeños */
+  }
+
+  .video-item {
+    max-width: calc(100% - 20px); /* Ajuste para que cada elemento ocupe toda la fila */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-item {
+    max-width: calc(100% - 10px); /* Ajuste adicional para pantallas muy pequeñas */
+  }
+}
+
+
 
 .mensaje {
   color: #000;
@@ -164,23 +292,44 @@ footer p {
 
 .formulario-mensaje {
   margin-top: 10px;
+  width: 100px;
 }
 
-.chatyboton {
-  position: fixed;
+.chat-container {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 2px solid #fff;
+  height: 450px;
+  overflow-y: auto;
+  position: relative;
   bottom: 10px;
   right: 10px;
-  display: flex;
-  width: 300px; /* Ajusta el ancho deseado */
+  background-color: #f8f9fa73;
+  padding: 10px;
+  border-radius: 20px;
+  width: 240px; /* Ajusta el ancho deseado */
+
 }
 
-.formulario-mensaje input,
-.formulario-mensaje button {
-  flex: 1; /* Hace que ocupen todo el espacio disponible en el contenedor */
-  margin-right: 5px; /* Añade un pequeño espacio entre el input y el botón */
+
+
+.formulario-mensaje {
+  margin-top: 10px;
+  width: auto; /* Cambiar el ancho a automático para que se ajuste al contenido */
+  display: flex; /* Establecer diseño de fila */
+  justify-content: flex-start; /* Justificar el contenido al inicio */
 }
+
+.formulario-mensaje input {
+  flex: 1; /* El campo de texto ocupará todo el espacio disponible */
+  margin-right: 5px; /* Añadir un pequeño espacio entre el input y el botón */
+}
+
 
 /* Agregado para espacio entre mensajes y formulario */
 .espacio-mensajes {
   margin-bottom: 10px;
+  
 }

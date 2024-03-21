@@ -1,0 +1,67 @@
+/* Estilos para la tienda */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0px 0px 15px rgb(255, 1, 1);
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.819);
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.card-text {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fondo rojo */
+    color: black;
+    line-height: 1.6;
+  }
+  .tienda-title {
+    color: #000000; /* Color de texto oscuro */
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.345); /* Sombra de texto suave */
+  }
+  .tienda-title:hover {
+    color: #ff0000; /* Cambia el color del texto al pasar el cursor */
+  }
+  img{
+    width: 300px;
+    height: 400px;
+  }
+  .btn-primary {
+    background-color: #820a0a; /* Color de fondo del botón */
+    border-color: white; /* Color del borde del botón */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  }
+  .btn-primary:hover {
+    background-color: #ff0000; /* Color de fondo del botón al pasar el cursor */
+    border-color: #820a0a; /* Color del borde del botón al pasar el cursor */
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+   .dropdown-item {
+      color: #ffffff; /* Color de texto */
+      transition: background-color 0.2s;
+      background-color: grey;
+    }
+    .dropdown-item:hover {
+        background-color: #ff0000; /* Color de fondo al pasar el cursor */
+    }
+    .dropdown-toggle{
+        background-color: #820a0a;
+    }
+  

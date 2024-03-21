@@ -13,6 +13,7 @@ class tienda extends Migration
             $table->string('producto');
             $table->decimal('precio', 8, 2);
             $table->integer('stock');
+            $table->string('archivo');
             $table->timestamps();
         });
     }

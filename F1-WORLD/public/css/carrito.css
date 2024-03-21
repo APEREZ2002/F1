@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.carrito-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.carrito-table th,
+.carrito-table td {
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.carrito-table th {
+    text-align: left;
+    font-weight: bold;
+}
+
+.carrito-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.total-carrito {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+}

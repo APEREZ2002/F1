@@ -96,7 +96,8 @@
     </div>
   </div>
 </section>
-
+<h2 class="linea-apartado2"> Experiencia Vip </h2>
+<br>  <br>
 
     <div class="experiencias-list">
         <!-- Lista de experiencias con imágenes y texto -->
@@ -107,6 +108,9 @@
               <p>Disfruta de la Fórmula 1 en todo su esplendor con nuestra Experiencia VIP. Sumérgete en la emoción de las carreras desde los mejores asientos, con acceso exclusivo a zonas reservadas. Conoce a pilotos destacados, disfruta de servicios premium y vive la F1 como nunca antes. Una oportunidad única para los verdaderos aficionados que buscan un trato VIP en el mundo de la velocidad.</p>
           </div>
 
+          <h2 class="linea-apartado2"> Pruebas de Conduccion </h2>
+          <br>  <br>
+
         <div class="experiencia">
           <a href="/experiencias/2">
             <img src="../images/experiencia2.jpg" alt="Experiencia 2">
@@ -114,6 +118,8 @@
               <p>¡Siente la potencia de un monoplaza de Fórmula 1 en tus propias manos! Con nuestras Pruebas de Conducción, tendrás la oportunidad de experimentar la adrenalina de estar al volante de un auténtico bólido de F1. Guiado por expertos instructores, podrás dar vueltas al circuito, perfeccionar tus habilidades de conducción y vivir la emoción de pilotar como un profesional. Una experiencia única para los amantes de la velocidad y la conducción de alto rendimiento.</p>
         </div>
 
+<h2 class="linea-apartado2"> Simulador Virtual </h2>
+<br>  <br>
 
         <div class="experiencia">
           <a href="/experiencias/3">
